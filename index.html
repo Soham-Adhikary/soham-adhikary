@@ -1,329 +1,136 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Soham Adhikary - Content Writer and Content Marketer</title>
-    <link rel="icon" href="favicon.png" type="image/png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Poppins', sans-serif;
-            color: #333;
-            line-height: 1.6;
-        }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+<title>Soham Adhikary - Content Writer and Content Marketer</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
 
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: 600;
-        }
+<link href="https://fonts.googleapis.com/css?family=Raleway:800,700,400" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Signika:400,600" rel="stylesheet" type="text/css">
 
-        a {
-            text-decoration: none;
-            color: #007bff;
-        }
-
-        a:hover {
-            color: #0056b3;
-        }
-
-        /* Hero Section */
-        .hero-section {
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: #fff;
-            padding: 150px 0;
-            text-align: center;
-        }
-
-        .hero-title {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-
-        .hero-subtitle {
-            font-size: 1.5rem;
-            margin-bottom: 40px;
-        }
-
-        /* About Section */
-        .about-section {
-            padding: 100px 0;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .section-subtitle {
-            font-size: 1.2rem;
-            color: #666;
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .skills-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .skills-list li {
-            margin-bottom: 10px;
-            font-size: 1.1rem;
-        }
-
-        /* Skills Section */
-        .skills-section {
-            padding: 100px 0;
-            background: #f8f9fa;
-        }
-
-        .skill-card {
-            text-align: center;
-            padding: 20px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .skill-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .skill-card i {
-            font-size: 2.5rem;
-            color: #007bff;
-            margin-bottom: 20px;
-        }
-
-        .skill-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-
-        .skill-card p {
-            font-size: 1rem;
-            color: #666;
-        }
-
-        /* Portfolio Section */
-        .portfolio-section {
-            padding: 100px 0;
-        }
-
-        .portfolio-filters {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .btn-filter {
-            margin: 5px;
-            background: #007bff;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
-
-        .btn-filter.active, .btn-filter:hover {
-            background: #0056b3;
-        }
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .portfolio-card {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .portfolio-card img {
-            width: 100%;
-            height: 300px; /* Set a fixed height for the images */
-            object-fit: cover; /* Ensure images cover the container while maintaining aspect ratio */
-            transition: transform 0.3s ease;
-        }
-
-        .portfolio-card:hover img {
-            transform: scale(1.1);
-        }
-
-        .portfolio-overlay {
-            position: absolute;
-            bottom: 0; /* Align the overlay to the bottom */
-            left: 0;
-            width: 100%;
-            height: auto; /* Adjust height automatically based on content */
-            background: rgba(0, 123, 255, 0.9);
-            color: #fff;
-            padding: 20px; /* Add some padding for better readability */
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .portfolio-card:hover .portfolio-overlay {
-            opacity: 1;
-        }
-
-        .portfolio-overlay h4 {
-            font-size: 1.2rem; /* Slightly smaller heading for better fit */
-            margin-bottom: 10px;
-        }
-
-        .portfolio-overlay p {
-            font-size: 0.9rem; /* Smaller font size for the description */
-        }
-
-        /* Contact Section */
-        .contact-section {
-            padding: 100px 0;
-            background: #f8f9fa;
-        }
-
-        .contact-info {
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-info p {
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-        }
-
-        .contact-info i {
-            margin-right: 10px;
-            color: #007bff;
-        }
-
-        /* Footer */
-        .footer {
-            background: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        .footer p {
-            margin: 0;
-        }
-    </style>
 </head>
 <body>
-    <!-- Hero Section -->
-    <section id="hero_section" class="hero-section">
+
+<section id="hero_section" class="top_cont_outer">
+    <div class="hero_wrapper">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-12 text-center">
-                    <h1 class="hero-title">Hello, I'm Soham Adhikary</h1>
-                    <p class="hero-subtitle">Content Writer & Content Marketer</p>
-                    <a href="#aboutUs" class="btn btn-primary btn-lg">Learn More About Me</a>
+            <div class="hero_section">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="top_left_cont zoomIn wow animated">
+                            <h2>Hello, my name is Soham Adhikary<br> <strong>I am a Content Writer and Content Marketer</strong></h2>
+                            <div class="underline"></div>
+                            <a href="#aboutUs" class="read_more2">Who Am I</a> </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Logo" height="30"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#hero_section">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#aboutUs">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#service">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Portfolio">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#clients">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- About Me Section -->
-    <section id="aboutUs" class="about-section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <p class="section-subtitle">A young professional spinning thoughts into content.</p>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="img/about1.jpg" class="img-fluid" alt="About Me">
+<header id="header_wrapper">
+    <div class="container">
+        <div class="header_box">
+            <div class="logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                 </div>
-                <div class="col-md-6">
-                    <h3>Soham Adhikary</h3>
-                    <p>
-                        Soham holds a Bachelor's degree in Geography from Vidyasagar University and has recently completed a Professional Certification in Digital Marketing & Strategy from the Indian Institute of Digital Education (IIDE). He has gained hands-on experience through an SEO/SEM internship at Texcial Private Limited, where he successfully increased organic traffic by 20% and search conversions by 6%. With a strong focus on SEO, content strategy, and campaign management, Soham has demonstrated his ability to optimize digital marketing efforts for measurable results. His expertise spans technical skills like SEO and SEM, proficiency in tools like Semrush and Google Analytics, and a creative approach to problem-solving and campaign development.
-                    </p>
-                    <ul class="skills-list">
-                        <li>SEO & SEM Expertise</li>
-                        <li>Content Strategy & Campaign Management</li>
-                        <li>Technical Proficiency with Semrush and Google Analytics</li>
-                        <li>Creative Problem-Solving</li>
-                        <li>Strong Analytical Skills</li>
-                        <li>Digital Marketing Knowledge</li>
-                        <li>Practical Experience</li>
+                <div id="main-nav" class="collapse navbar-collapse navStyle">
+                    <ul class="nav navbar-nav" id="mainNav">
+                        <li class="active"><a href="#hero_section" class="scroll-link">Home</a></li>
+                        <li><a href="#aboutUs" class="scroll-link">About Me</a></li>
+                        <li><a href="#service" class="scroll-link">Skills</a></li>
+                        <li><a href="#Portfolio" class="scroll-link">Projects</a></li>
+                        <li><a href="#clients" class="scroll-link">Experience</a></li>
+                        <li><a href="#contact" class="scroll-link">Contact</a></li>
                     </ul>
                 </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section id="aboutUs">
+    <div class="inner_wrapper aboutUs-container fadeInLeft animated wow">
+        <div class="container">
+            <h2>About Me</h2>
+            <h6>A young professional spinning thoughts into content.</h6>
+            <div class="inner_section">
+                <div class="row">
+                    <div class="col-lg-12 about-us">
+                        <div class="row">
+                            <div class="col-md-6"> <img class="img-responsive" src="img/about1.jpg" alt="About Me"> </div>
+                            <div class="col-md-6">
+                                <h3>Soham Adhikary</h3>
+                                <p>
+                                    Soham holds a Bachelor's degree in Geography from Vidyasagar University and has recently completed a Professional Certification in Digital Marketing & Strategy from the Indian Institute of Digital Education (IIDE). He has gained hands-on experience through an SEO internship at Texcial Private Limited, where he successfully increased organic traffic by 20% and search conversions by 6%. With a strong focus on SEO, content strategy, and campaign management, Soham has demonstrated his ability to optimize digital marketing efforts for measurable results. His expertise spans technical skills like SEO and SEM, proficiency in various tools like Semrush and Google Analytics, and a creative approach to problem-solving and campaign development.
+                                </p>
+
+                                <ul class="about-us-list">
+                                    <li class="points">SEO & SEM Expertise</li>
+                                    <li class="points">Content Strategy & Campaign Management</li>
+                                    <li class="points">Technical Proficiency with Semrush and Google Analytics</li>
+                                    <li class="points">Creative Problem-Solving</li>
+                                    <li class="points">Strong Analytical Skills</li>
+                                    <li class="points">Digital Marketing Knowledge</li>
+                                    <li class="points">Practical Experience</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Skills Section -->
-    <section id="service" class="skills-section">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <p class="section-subtitle">Crafting compelling narratives and driving digital success.</p>
+<section id="service">
+    <div class="container">
+        <h2>Skills</h2>
+        <h6>Crafting compelling narratives and driving digital success.</h6>
+        <div class="service_wrapper">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="skill-card">
-                        <i class="fas fa-pencil-alt"></i>
-                        <h3>Content Writing</h3>
-                        <p>Crafting engaging and informative content across various formats.</p>
+                    <div class="service_icon delay-03s animated wow zoomIn"> <span><i class="fa fa-pencil"></i></span> </div>
+                    <div class="service_block">
+                        <h3 class="animated fadeInUp wow">Content Writing</h3>
+                        <p class="animated fadeInDown wow">Crafting engaging and informative content across various formats. </p>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="skill-card">
-                        <i class="fas fa-search"></i>
-                        <h3>SEO</h3>
-                        <p>Optimizing content and websites for search engine visibility.</p>
+                    <div class="service_icon icon2 delay-03s animated wow zoomIn"> <span><i class="fa fa-search"></i></span> </div>
+                    <div class="service_block">
+                        <h3 class="animated fadeInUp wow">SEO</h3>
+                        <p class="animated fadeInDown wow">Optimizing content and websites for search engine visibility. </p>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="skill-card">
-                        <i class="fas fa-lightbulb"></i>
-                        <h3>Content Strategy</h3>
-                        <p>Developing and executing content plans to achieve business goals.</p>
+                    <div class="service_icon icon3 delay-03s animated wow zoomIn"> <span><i class="fa fa-lightbulb-o"></i></span> </div>
+                    <div class="service_block">
+                        <h3 class="animated fadeInUp wow">Content Strategy</h3>
+                        <p class="animated fadeInDown wow">Developing and executing content plans to achieve business goals. </p>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="skill-card">
-                        <i class="fas fa-bullhorn"></i>
-                        <h3>Digital Marketing</h3>
-                        <p>Driving online visibility and engagement through various channels.</p>
+                    <div class="service_icon icon3 delay-03s animated wow zoomIn"> <span><i class="fa fa-bullhorn"></i></span> </div>
+                    <div class="service_block">
+                        <h3 class="animated fadeInUp wow">Digital Marketing</h3>
+                        <p class="animated fadeInDown wow">Driving online visibility and engagement through various channels. </p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-  <section id="Portfolio" class="content">
+<section id="Portfolio" class="content">
     <div class="container portfolio_title">
         <div class="section-title">
             <h2>Projects</h2>
@@ -403,23 +210,3 @@
 
     </div>
 </section>
-
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <p>&copy; 2025 Soham Adhikary. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script>
-        // Initialize Isotope
