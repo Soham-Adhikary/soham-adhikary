@@ -118,106 +118,102 @@ html
     </div>
 </section>
 
-<section id="Portfolio" class="section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center mb-5">
-                <h2 class="section-title">Portfolio</h2>
-                <p class="section-subtitle">Professional Projects & Personal Writing</p>
-            </div>
-        </div>
-
-        <!-- Portfolio Navigation Tabs -->
-        <ul class="nav nav-pills justify-content-center mb-5" id="portfolio-tabs" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="pill" href="#professional">Professional Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="pill" href="#personal">Personal Writing</a>
-            </li>
-        </ul>
-
-        <!-- Portfolio Content -->
-        <div class="tab-content">
-            <!-- Professional Projects Tab -->
-            <div class="tab-pane fade show active" id="professional">
-                <div class="portfolio-grid">
-                    <!-- Cloud Computing Project -->
-                    <div class="portfolio-card">
-                        <a href="projects/sites/cloud-computing.html">
-                            <img src="img/portfolio/cloud_computing.jpg" alt="Cloud Computing">
-                            <div class="portfolio-overlay">
-                                <h4>From Mainframes to the Cloud</h4>
-                                <p>Evolution of Business Computing</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- HSBC Project -->
-                    <div class="portfolio-card">
-                        <a href="projects/Hsbc.pdf" target="_blank">
-                            <img src="img/portfolio/hsbc.jpg" alt="HSBC Project">
-                            <div class="portfolio-overlay">
-                                <h4>HSBC Website Optimization</h4>
-                                <p>Enhanced conversion rates through strategic improvements</p>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Add other professional projects -->
-                </div>
-            </div>
-
-            <!-- Personal Writing Tab -->
-            <div class="tab-pane fade" id="personal">
-                <div class="portfolio-grid">
-                    <!-- Societal Writing -->
-                    <div class="portfolio-card">
-                        <a href="projects/sites/societal-writing.html">
-                            <img src="img/portfolio/society.jpg" alt="Societal Writing">
-                            <div class="portfolio-overlay">
-                                <h4>Societal Perspectives</h4>
-                                <p>Commentary on Social Issues</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Travel Writing -->
-                    <div class="portfolio-card">
-                        <a href="projects/sites/travel-stories.html">
-                            <img src="img/portfolio/travel.jpg" alt="Travel Writing">
-                            <div class="portfolio-overlay">
-                                <h4>Travel Chronicles</h4>
-                                <p>Stories from Various Journeys</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Creative Writing -->
-                    <div class="portfolio-card">
-                        <a href="projects/sites/creative-pieces.html">
-                            <img src="img/portfolio/creative.jpg" alt="Creative Writing">
-                            <div class="portfolio-overlay">
-                                <h4>Creative Corner</h4>
-                                <p>Short Stories and Poetry</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Opinion Pieces -->
-                    <div class="portfolio-card">
-                        <a href="projects/sites/opinion-pieces.html">
-                            <img src="img/portfolio/opinion.jpg" alt="Opinion Pieces">
-                            <div class="portfolio-overlay">
-                                <h4>Opinion Articles</h4>
-                                <p>Thoughts on Current Affairs</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+<section id="Portfolio" class="content">
+    <div class="container portfolio_title">
+        <div class="section-title">
+            <h2>Projects</h2>
+            <h6>Professional Projects & Personal Writing</h6>
         </div>
     </div>
+    <div class="portfolio-top"></div>
+    <div class="portfolio">
+        <div id="filters" class="sixteen columns">
+            <ul class="clearfix">
+                <li><a id="all" href="#" data-filter="*" class="active"><h5>All</h5></a></li>
+                <li><a href="#" data-filter=".professional"><h5>Professional Projects</h5></a></li>
+                <li><a href="#" data-filter=".personal"><h5>Personal Writing</h5></a></li>
+            </ul>
+        </div>
+        <div class="isotope fadeInLeft animated wow grid" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper">
+
+            <!-- Professional Projects -->
+            <figure class="portfolio-item one-four media isotope-item effect-oscar professional">
+                <div class="portfolio_img"> <img src="img/portfolio/cloud_computing.jpg" alt="From Mainframes to the Cloud: A Business Game-Changer."> </div>
+                <figcaption>
+                    <div>
+                        <a href="projects/cloud1-content-writing.doc" class="fancybox" target="_blank">
+                            <h2>From Mainframes to the Cloud: A Business Game-Changer.</h2>
+                            <p>Discover how cloud computing has revolutionized business operations...</p>
+                        </a>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure class="portfolio-item one-four cro isotope-item effect-oscar professional">
+                <div class="portfolio_img"> <img src="img/portfolio/hsbc.jpg" alt="Optimizing HSBC Credit Card Website for Better Conversions"> </div>
+                <figcaption>
+                    <div>
+                        <a href="projects/Hsbc.pdf" class="fancybox" target="_blank">
+                            <h2>Optimizing HSBC Credit Card Website for Better Conversions</h2>
+                            <p>This strategy outlines a comprehensive analysis of the HSBC credit card website...</p>
+                        </a>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure class="portfolio-item one-four case isotope-item effect-oscar professional">
+                <div class="portfolio_img"> <img src="img/portfolio/nuzest.jpg" alt="Competitor Analysis and SEO Strategy for Nuzest Protein Powder"> </div>
+                <figcaption>
+                    <div>
+                        <a href="projects/seo1.pdf" class="fancybox" target="_blank">
+                            <h2>Competitor Analysis and SEO Strategy for Nuzest Protein Powder</h2>
+                            <p>This presentation provides an in-depth analysis of key competitors...</p>
+                        </a>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure class="portfolio-item one-four seo isotope-item effect-oscar professional">
+                <div class="portfolio_img"> <img src="img/portfolio/bombay_shaving.jpg" alt="Innovative Strategies for Bombay Shaving Company"> </div>
+                <figcaption>
+                    <div>
+                        <a href="projects/HBR Case Study.pdf" class="fancybox" target="_blank">
+                            <h2>Innovative Strategies for Bombay Shaving Company</h2>
+                            <p>Since 2020, Bombay Shaving Company has leveraged data-driven insights...</p>
+                        </a>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <!-- Personal Writing -->
+            <figure class="portfolio-item one-four isotope-item effect-oscar personal">
+                <div class="portfolio_img"> 
+                    <div style="background: #f5f5f5; height: 300px; display: flex; align-items: center; justify-content: center;">
+                        <h3 style="color: #333;">Societal Perspectives</h3>
+                    </div>
+                </div>
+                <figcaption>
+                    <div>
+                        <a href="projects/sites/societal-writing.html" class="fancybox">
+                            <h2>Societal Perspectives</h2>
+                            <p>Commentary on Social Issues and Contemporary Thought</p>
+                        </a>
+                    </div>
+                </figcaption>
+            </figure>
+
+        </div>
+
+        <div class="portfolio_btm"></div>
+
+        <div id="project_container">
+            <div class="clear"></div>
+            <div id="project_data"></div>
+        </div>
+
+    </div>
 </section>
+
 
 
 <!-- Footer -->
