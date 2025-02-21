@@ -129,3 +129,143 @@ body {
     }
 }
 
+
+
+css
+/* Article Formatting Styles */
+.writing-piece {
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.writing-piece h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+/* Meta information styling */
+.article-meta {
+    margin-bottom: 2rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.article-meta span {
+    margin-right: 1.5rem;
+}
+
+/* Article content styling */
+.article-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.8rem;
+    color: #444;
+}
+
+/* Quote styling */
+.article-content blockquote {
+    margin: 2rem 0;
+    padding-left: 1.5rem;
+    border-left: 4px solid #2575fc;
+    font-style: italic;
+    color: #555;
+}
+
+/* Emphasis and highlighting */
+.article-content strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.article-content em {
+    font-style: italic;
+}
+
+/* Link styling */
+.article-content a {
+    color: #2575fc;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.article-content a:hover {
+    border-bottom-color: #2575fc;
+}
+
+/* Spacing and readability */
+.article-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* First paragraph special styling */
+.article-content p:first-of-type {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .writing-piece h2 {
+        font-size: 1.8rem;
+    }
+
+    .article-content p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .article-container {
+        padding: 1rem;
+    }
+}
+
+/* Optional: Add a nice reading progress bar */
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #2575fc;
+    z-index: 1000;
+    transition: width 0.2s ease;
+}
+
+/* Optional: Add styling for section breaks */
+.section-break {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.section-break::before {
+    content: "• • •";
+    color: #666;
+    letter-spacing: 1rem;
+}
+
+/* Typography improvements */
+.writing-piece {
+    font-family: 'Georgia', serif;  /* Better for reading long-form content */
+}
+
+/* Optional: Add subtle hover effect on paragraphs */
+.article-content p:hover {
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+/* Highlight text selection */
+::selection {
+    background: #2575fc33;
+    color: #333;
+}
+
+
+
+
