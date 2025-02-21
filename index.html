@@ -118,100 +118,107 @@ html
     </div>
 </section>
 
-<!-- Portfolio Section -->
-<section id="portfolio" class="section-padding">
+<section id="Portfolio" class="section-padding">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-5">
                 <h2 class="section-title">Portfolio</h2>
-                <p class="section-subtitle">Recent Projects & Case Studies</p>
+                <p class="section-subtitle">Professional Projects & Personal Writing</p>
             </div>
         </div>
-        <div class="portfolio-grid">
-            <!-- Cloud Computing Project -->
-            <div class="portfolio-card">
-                <a href="projects/cloud1-content-writing.doc" target="_blank">
-                    <img src="img/portfolio/cloud_computing.jpg" alt="Cloud Computing">
-                    <div class="portfolio-overlay">
-                        <h4>From Mainframes to the Cloud</h4>
-                        <p>Discover how cloud computing has revolutionized business operations</p>
+
+        <!-- Portfolio Navigation Tabs -->
+        <ul class="nav nav-pills justify-content-center mb-5" id="portfolio-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="pill" href="#professional">Professional Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#personal">Personal Writing</a>
+            </li>
+        </ul>
+
+        <!-- Portfolio Content -->
+        <div class="tab-content">
+            <!-- Professional Projects Tab -->
+            <div class="tab-pane fade show active" id="professional">
+                <div class="portfolio-grid">
+                    <!-- Cloud Computing Project -->
+                    <div class="portfolio-card">
+                        <a href="projects/sites/cloud-computing.html">
+                            <img src="img/portfolio/cloud_computing.jpg" alt="Cloud Computing">
+                            <div class="portfolio-overlay">
+                                <h4>From Mainframes to the Cloud</h4>
+                                <p>Evolution of Business Computing</p>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
 
-            <!-- HSBC Project -->
-            <div class="portfolio-card">
-                <a href="projects/Hsbc.pdf" target="_blank">
-                    <img src="img/portfolio/hsbc.jpg" alt="HSBC Project">
-                    <div class="portfolio-overlay">
-                        <h4>HSBC Website Optimization</h4>
-                        <p>Enhanced conversion rates through strategic improvements</p>
+                    <!-- HSBC Project -->
+                    <div class="portfolio-card">
+                        <a href="projects/Hsbc.pdf" target="_blank">
+                            <img src="img/portfolio/hsbc.jpg" alt="HSBC Project">
+                            <div class="portfolio-overlay">
+                                <h4>HSBC Website Optimization</h4>
+                                <p>Enhanced conversion rates through strategic improvements</p>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-
-            <!-- Nuzest Project -->
-            <div class="portfolio-card">
-                <a href="projects/seo1.pdf" target="_blank">
-                    <img src="img/portfolio/nuzest.jpg" alt="Nuzest SEO">
-                    <div class="portfolio-overlay">
-                        <h4>Nuzest SEO Strategy</h4>
-                        <p>Competitor Analysis and SEO Strategy Implementation</p>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Bombay Shaving Company Project -->
-            <div class="portfolio-card">
-                <a href="projects/HBR Case Study.pdf" target="_blank">
-                    <img src="img/portfolio/bombay_shaving.jpg" alt="Bombay Shaving Company">
-                    <div class="portfolio-overlay">
-                        <h4>Innovative Marketing Strategy</h4>
-                        <p>Data-driven insights for Bombay Shaving Company</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<!-- Contact Section -->
-<section id="contact" class="section-padding bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center mb-5">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's discuss your next project</p>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="contact-info">
-                    <h4>Contact Information</h4>
-                    <p><i class="fas fa-envelope"></i> sohamadhikary12@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> +91 8597244845</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Kolkata, India</p>
-                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sohamadhikary" target="_blank">LinkedIn Profile</a></p>
+                    <!-- Add other professional projects -->
                 </div>
             </div>
 
-            <div class="col-md-6">
-                <form class="contact-form">
-                    <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Your Name">
+            <!-- Personal Writing Tab -->
+            <div class="tab-pane fade" id="personal">
+                <div class="portfolio-grid">
+                    <!-- Societal Writing -->
+                    <div class="portfolio-card">
+                        <a href="projects/sites/societal-writing.html">
+                            <img src="img/portfolio/society.jpg" alt="Societal Writing">
+                            <div class="portfolio-overlay">
+                                <h4>Societal Perspectives</h4>
+                                <p>Commentary on Social Issues</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="mb-3">
-                        <input type="email" class="form-control" placeholder="Your Email">
+
+                    <!-- Travel Writing -->
+                    <div class="portfolio-card">
+                        <a href="projects/sites/travel-stories.html">
+                            <img src="img/portfolio/travel.jpg" alt="Travel Writing">
+                            <div class="portfolio-overlay">
+                                <h4>Travel Chronicles</h4>
+                                <p>Stories from Various Journeys</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="mb-3">
-                        <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+
+                    <!-- Creative Writing -->
+                    <div class="portfolio-card">
+                        <a href="projects/sites/creative-pieces.html">
+                            <img src="img/portfolio/creative.jpg" alt="Creative Writing">
+                            <div class="portfolio-overlay">
+                                <h4>Creative Corner</h4>
+                                <p>Short Stories and Poetry</p>
+                            </div>
+                        </a>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+
+                    <!-- Opinion Pieces -->
+                    <div class="portfolio-card">
+                        <a href="projects/sites/opinion-pieces.html">
+                            <img src="img/portfolio/opinion.jpg" alt="Opinion Pieces">
+                            <div class="portfolio-overlay">
+                                <h4>Opinion Articles</h4>
+                                <p>Thoughts on Current Affairs</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
 
 <!-- Footer -->
 <footer class="footer bg-dark text-white py-4">
