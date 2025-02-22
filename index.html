@@ -1,3 +1,5 @@
+Here's your complete, corrected index.html file. Just copy and paste this entire code:
+
 html
 <!DOCTYPE html>
 <html lang="en">
@@ -61,14 +63,13 @@ html
             <div class="col-md-6">
                 <div class="about-content">
                     <h3 class="mb-4">Digital Marketing Professional</h3>
-                    <p class="lead mb-4">I'm a digital marketing enthusiast with a Bachelor's degree in Geography from <a href="https://www.vidyasagar.ac.in/" target="_blank">Vidyasagar University</a>—because who knew understanding the earth would help me navigate the world of Content Marketing? From <a href="https://iide.co/" target="_blank">Indian Institute of Digital Education (IIDE)</a> I completed the Professional certification in Digital Marketing & Strategy, ready to turn clicks into conversions faster than one can say "organic traffic!" During my internship at Texcial Private Limited, I implemented SEO strategies, written blogs, managed Google Ads and Google Business profiles, created engaging content, analyzed traffic data, and exceeded client expectations. My specialties include Content Writing, SEO, content strategy, and campaign management, all while weaving creativity into my work, crafting narrative that resonates and inspire. I thrive on solving challenges, crafting innovative campaigns, and bringing a sprinkle of humor to the serious business of digital marketing. Excited to create impactful strategies that not only drive growth but might just make you chuckle along the way!
-</p>
+                    <p class="lead mb-4">I'm a digital marketing enthusiast with a Bachelor's degree in Geography from <a href="https://www.vidyasagar.ac.in/" target="_blank">Vidyasagar University</a>—because who knew understanding the earth would help me navigate the world of Content Marketing? From <a href="https://iide.co/" target="_blank">Indian Institute of Digital Education (IIDE)</a> I completed the Professional certification in Digital Marketing & Strategy, ready to turn clicks into conversions faster than one can say "organic traffic!" During my internship at Texcial Private Limited, I implemented SEO strategies, written blogs, managed Google Ads and Google Business profiles, created engaging content, analyzed traffic data, and exceeded client expectations. My specialties include Content Writing, SEO, content strategy, and campaign management, all while weaving creativity into my work, crafting narrative that resonates and inspire. I thrive on solving challenges, crafting innovative campaigns, and bringing a sprinkle of humor to the serious business of digital marketing. Excited to create impactful strategies that not only drive growth but might just make you chuckle along the way!</p>
                     <ul class="skill-list">
-                        <li><i class="fas fa-check-circle"></i> Core Writing Skills (Creative Writing, Content Writing, Copywriting, Storyetlling, Clarity and Conciseness) </li>
-                         <li><i class="fas fa-check-circle"></i> Teechnical and Execution Skills (SEO Optimization, Content Management Systems, Analytical Tools, Multilingual Content Creation, Collaboration </li>
-                        <li><i class="fas fa-check-circle"></i> Strategic and Analytical Thinking (Content Strategy, Audience Research, Competitior Analysis, Problem Solving and Decision Making </li>
-                        <li><i class="fas fa-check-circle"></i> Research and Data Skills (In-depth Research, Trend Analysis, Keyword Research, Competitor Benchmarking </li>
-                        <li><i class="fas fa-check-circle"></i> Creatvity and Innovatiion (Creative Content Development, Branding Through Content, Multimedia Storytelling, SEO-Driven Creativity, Adaptability</li>
+                        <li><i class="fas fa-check-circle"></i> Core Writing Skills (Creative Writing, Content Writing, Copywriting, Storyetlling, Clarity and Conciseness)</li>
+                        <li><i class="fas fa-check-circle"></i> Technical and Execution Skills (SEO Optimization, Content Management Systems, Analytical Tools, Multilingual Content Creation, Collaboration)</li>
+                        <li><i class="fas fa-check-circle"></i> Strategic and Analytical Thinking (Content Strategy, Audience Research, Competitor Analysis, Problem Solving and Decision Making)</li>
+                        <li><i class="fas fa-check-circle"></i> Research and Data Skills (In-depth Research, Trend Analysis, Keyword Research, Competitor Benchmarking)</li>
+                        <li><i class="fas fa-check-circle"></i> Creativity and Innovation (Creative Content Development, Branding Through Content, Multimedia Storytelling, SEO-Driven Creativity, Adaptability)</li>
                     </ul>
                 </div>
             </div>
@@ -118,10 +119,8 @@ html
     </div>
 </section>
 
-
-
-
-<section id="Portfolio" class="section-padding">
+<!-- Portfolio Section -->
+<section id="portfolio" class="section-padding">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-5">
@@ -192,39 +191,26 @@ html
     </div>
 </section>
 
-
-Remove the inline <style> tag and add this to your style.css:
-
-css
-/* Portfolio Filters */
-.portfolio-filters {
-    margin-bottom: 2rem;
-}
-
-.filter-btn {
-    background: none;
-    border: 2px solid #2575fc;
-    color: #2575fc;
-    padding: 0.8rem 2rem;
-    margin: 0.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.filter-btn.active,
-.filter-btn:hover {
-    background: #2575fc;
-    color: white;
-    transform: translateY(-2px);
-}
-
-
-
-
-
+<!-- Contact Section -->
+<section id="contact" class="section-padding bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss your next project</p>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="contact-info">
+                    <h4>Contact Information</h4>
+                    <p><i class="fas fa-envelope"></i> sohamadhikary12@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 8597244845</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kolkata, India</p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sohamadhikary" target="_blank">LinkedIn Profile</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Footer -->
 <footer class="footer bg-dark text-white py-4">
@@ -237,6 +223,9 @@ css
     </div>
 </footer>
 
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const filterButtons = document.querySelectorAll('.filter-btn');
@@ -269,11 +258,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-
-
-
-
-
 </body>
 </html>
+
 

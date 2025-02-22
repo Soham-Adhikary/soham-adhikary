@@ -240,8 +240,38 @@ body {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+
+/* Update the portfolio-card transition */
+.portfolio-card {
+    transition: opacity 0.3s ease, transform 0.3s ease, display 0.3s ease;
+    opacity: 1;
+}
+
+
+/* Add specific styles for hidden cards */
 .portfolio-card.hidden {
+    opacity: 0;
     display: none;
 }
+
+/* Modify portfolio-overlay for the personal writing card */
+.portfolio-card.personal .portfolio-overlay {
+    transform: none;
+    height: 100%;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Update filter button active state */
+.filter-btn.active {
+    background: #2575fc;
+    color: white;
+    transform: translateY(-2px);
+}
+
 
 
