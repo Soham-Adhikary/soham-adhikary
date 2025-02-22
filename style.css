@@ -1,4 +1,3 @@
-css
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
@@ -74,17 +73,15 @@ body {
     margin-right: 10px;
 }
 
-
-css
 /* Link Styling */
-.about-content a {
+.about-content a, .contact-info a {
     color: #2575fc;
     text-decoration: none;
     position: relative;
     transition: color 0.3s ease;
 }
 
-.about-content a::after {
+.about-content a::after, .contact-info a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -97,24 +94,14 @@ css
     transition: transform 0.3s ease;
 }
 
-.about-content a:hover {
+.about-content a:hover, .contact-info a:hover {
     color: #1a5fc8;
 }
 
-.about-content a:hover::after {
+.about-content a:hover::after, .contact-info a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* Skills Section */
 .skill-card {
@@ -155,6 +142,8 @@ css
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    opacity: 1;
 }
 
 .portfolio-card img {
@@ -184,9 +173,47 @@ css
     transform: scale(1.1);
 }
 
-.portfolio-overlay h4 {
+.portfolio-overlay h3 {
     font-size: 1.4rem;
     margin-bottom: 10px;
+}
+
+/* Portfolio Filters */
+.portfolio-filters {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    background: none;
+    border: 2px solid #2575fc;
+    color: #2575fc;
+    padding: 0.8rem 2rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: #2575fc;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Personal Writing Card Specific */
+.portfolio-card.personal .portfolio-overlay {
+    transform: none;
+    height: 100%;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* Contact Section */
@@ -208,12 +235,6 @@ css
 .contact-info i {
     color: #2575fc;
     margin-right: 10px;
-}
-
-.contact-form .form-control {
-    padding: 0.8rem;
-    border-radius: 5px;
-    margin-bottom: 1rem;
 }
 
 .btn-primary {
@@ -249,71 +270,4 @@ css
         grid-template-columns: 1fr;
     }
 }
-
-
-/* Filter Buttons Styling */
-.portfolio-filters {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.filter-btn {
-    background: none;
-    border: 2px solid #2575fc;
-    color: #2575fc;
-    padding: 0.8rem 2rem;
-    margin: 0.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.filter-btn.active,
-.filter-btn:hover {
-    background: #2575fc;
-    color: white;
-    transform: translateY(-2px);
-}
-
-/* Project visibility transitions */
-.portfolio-card {
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-
-/* Update the portfolio-card transition */
-.portfolio-card {
-    transition: opacity 0.3s ease, transform 0.3s ease, display 0.3s ease;
-    opacity: 1;
-}
-
-
-/* Add specific styles for hidden cards */
-.portfolio-card.hidden {
-    opacity: 0;
-    display: none;
-}
-
-/* Modify portfolio-overlay for the personal writing card */
-.portfolio-card.personal .portfolio-overlay {
-    transform: none;
-    height: 100%;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-/* Update filter button active state */
-.filter-btn.active {
-    background: #2575fc;
-    color: white;
-    transform: translateY(-2px);
-}
-
-
 
