@@ -31,11 +31,12 @@ body {
     background: rgba(0, 0, 0, 0.95) !important;
     padding: 0.5rem 0;
 }
-
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: white;
+    background-image: url('projects/albertcamus.jpg'); /* Set background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    color: white; /* Maintain text color */
     min-height: 100vh;
     display: flex;
     align-items: center;
