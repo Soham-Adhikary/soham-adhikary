@@ -31,12 +31,11 @@ body {
     background: rgba(0, 0, 0, 0.95) !important;
     padding: 0.5rem 0;
 }
+
 /* Hero Section */
 .hero-section {
-    background-image: url('projects/albertcamus.jpg'); /* Set background image */
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the image */
-    color: white; /* Maintain text color */
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -206,16 +205,23 @@ body {
 }
 
 /* Personal Writing Card Specific */
+.portfolio-card.personal {
+    background-image: url('projects/albertcamus.jpg'); /* Add your image here */
+    background-size: cover; /* Ensures the image covers the card */
+    background-position: center; /* Centers the image */
+    color: white; /* Text color */
+    border-radius: 10px; /* Optional: round corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+    position: relative; /* Needed for absolute positioning of overlay */
+}
+
 .portfolio-card.personal .portfolio-overlay {
-    transform: none;
-    height: 100%;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for overlay */
+    height: 100%; /* Full height of the card */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+    justify-content: center; /* Center content */
+    align-items: center; /* Center content */
 
 /* Contact Section */
 .contact-info {
