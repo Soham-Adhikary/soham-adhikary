@@ -1,38 +1,90 @@
-// Smooth Scrolling
+// script.js
+
+// Smooth Scrolling for Internal Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(e) {
+    anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute("href"));
-        if (target) {
-            window.scrollTo({
-                top: target.offsetTop - 50, 
-                behavior: "smooth"
-            });
-        }
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Lazy Loading Images
+document.addEventListener("DOMContentLoaded", function() {
+    const lazyImages = document.querySelectorAll('img[data-src]');
+    
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.getAttribute('data-src');
+                img.onload = () => img.removeAttribute('data-src');
+                observer.unobserve(img);
+            }
+        });
+    });
+    
+    lazyImages.forEach(image => {
+        imageObserver.observe(image);
     });
 });
 
 // Dark Mode Toggle
-const darkModeToggle = document.createElement("button");
-darkModeToggle.textContent = "🌙 Dark Mode";
-darkModeToggle.classList.add("dark-mode-btn");
+const toggleButton = document.createElement('button');
+toggleButton.textContent = 'Toggle Dark Mode';
+toggleButton.classList.add('btn', 'btn-secondary', 'fixed-bottom', 'm-2');
+document.body.appendChild(toggleButton);
 
-document.body.appendChild(darkModeToggle);
+toggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
 
-darkModeToggle.addEventListener("click", () => {
-    document.body.classList.toggle("light-mode");
+// Scroll to Top Button
+const scrollToTopButton = document.createElement('button');
+scrollToTopButton.textContent = '↑';
+scrollToTopButton.classList.add('btn', 'btn-secondary', 'scroll-to-top', 'fixed-bottom', 'm-2');
+scrollToTopButton.style.display = 'none';
+document.body.appendChild(scrollToTopButton);
 
-    if (document.body.classList.contains("light-mode")) {
-        darkModeToggle.textContent = "🌙 Dark Mode";
-        localStorage.setItem("theme", "light");
+scrollToTopButton.addEventListener('click', () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+});
+
+// Show/Hide Scroll to Top Button
+window.addEventListener('scroll', () => {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollToTopButton.style.display = 'block';
     } else {
-        darkModeToggle.textContent = "☀️ Light Mode";
-        localStorage.setItem("theme", "dark");
+        scrollToTopButton.style.display = 'none';
     }
 });
 
-// Load Theme Preference
-if (localStorage.getItem("theme") === "light") {
-    document.body.classList.add("light-mode");
-    darkModeToggle.textContent = "☀️ Light Mode";
-}
+// Dynamic Form Validation (Example implementation)
+document.querySelector('form').addEventListener('submit', function(e) {
+    const emailInput = this.querySelector('input[type="email"]');
+    const phoneInput = this.querySelector('input[type="tel"]');
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phonePattern = /^\d{10}$/;
+
+    let valid = true;
+
+    if (!emailPattern.test(emailInput.value)) {
+        emailInput.setCustomValidity("Please enter a valid email.");
+        valid = false;
+    } else {
+        emailInput.setCustomValidity("");
+    }
+
+    if (!phonePattern.test(phoneInput.value)) {
+        phoneInput.setCustomValidity("Please enter a valid 10-digit phone number.");
+        valid = false;
+    } else {
+        phoneInput.setCustomValidity("");
+    }
+
+    if (!valid) {
+        e.preventDefault();
+        alert("Please fix the errors in the form.");
+    }
+});
