@@ -166,3 +166,20 @@ footer {
         padding: 40px 20px;
     }
 }
+
+
+/* Light Mode */
+.light-mode {
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --text-color: #222;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+/* Fade-in Animation Class */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
