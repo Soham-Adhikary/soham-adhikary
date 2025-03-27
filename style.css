@@ -10,24 +10,24 @@ body {
 }
 
 .section-padding {
-    padding: 100px 0; /* Consistent padding for sections */
+    padding: 120px 0; /* Increased padding for better spacing */
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: 2.8rem; /* Slightly larger font size */
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem; /* Increased margin for better spacing */
 }
 
 .section-subtitle {
     font-size: 1.1rem;
     color: #666;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem; /* Increased margin for better spacing */
 }
 
 /* Navbar */
 .navbar {
-    padding: 1rem 0;
+    padding: 1.5rem 0; /* Increased padding for better spacing */
     transition: all 0.3s ease;
 }
 
@@ -48,12 +48,12 @@ body {
 .hero-section h1 {
     font-size: 4rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem; /* Increased margin for better spacing */
 }
 
 .hero-section .lead {
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem; /* Increased margin for better spacing */
 }
 
 /* About Section */
@@ -70,7 +70,7 @@ body {
 }
 
 .skill-list li {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem; /* Increased margin for better spacing */
     font-size: 1.1rem;
 }
 
@@ -190,15 +190,15 @@ body {
 /* Portfolio Filters */
 .portfolio-filters {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem; /* Increased margin for better spacing */
 }
 
 .filter-btn {
     background: none;
     border: 2px solid #2575fc;
     color: #2575fc;
-    padding: 0.8rem 2rem;
-    margin: 0.5rem;
+    padding: 1rem 2.5rem; /* Increased padding for better spacing */
+    margin: 0.8rem; /* Increased margin for better spacing */
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -239,17 +239,17 @@ body {
 /* Contact Section */
 .contact-info {
     background: white;
-    padding: 2rem;
+    padding: 2.5rem; /* Increased padding for better spacing */
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .contact-info h4 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem; /* Increased margin for better spacing */
 }
 
 .contact-info p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem; /* Increased margin for better spacing */
 }
 
 .contact-info i {
@@ -273,21 +273,22 @@ body {
 /* Footer */
 .footer {
     background: #1a1a1a;
-    padding: 2rem 0;
+    padding: 3rem 0; /* Increased padding for better spacing */
     color: white; /* Ensures text is visible */
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .hero-section h1 {
-        font-size: 3rem;
+        font-size: 3.2rem; /* Slightly larger font size for better readability */
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 2.2rem; /* Slightly larger font size for better readability */
     }
 
     .portfolio-grid {
         grid-template-columns: 1fr; /* Single column for smaller screens */
+        gap: 40px; /* Increased gap for better spacing */
     }
 }
